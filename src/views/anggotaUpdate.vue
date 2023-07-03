@@ -3,8 +3,8 @@ import {RouterLink} from "vue-router";
 import axios from "axios";
 import {ref} from 'vue';
 
-const updateAnggota = 'http://localhost/buku/updateanggota.php';
-const selectAnggota = 'http://localhost/buku/selectbynomoranggota.php';
+const updateAnggota = 'https://syakiraspace.my.id/fayzashahira/updateanggota.php';
+const selectAnggota = 'https://syakiraspace.my.id/fayzashahira/selectbynomoranggota.php';
 
 export default {
   data() {
@@ -107,10 +107,32 @@ export default {
     Update Anggota
   </button>
   <router-link to="/anggota" class="btn btn-secondary me-5"
-  >back</router-link>
+  ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+    <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+  </svg>back</router-link>
 </template>
 
 
 <style scoped>
 
+.modal-body{
+  margin-left: 250px;
+  margin-right: 250px;
+  font-weight: bolder;
+  margin-top: 40px;
+}
+.btn-primary{
+  margin-left: 630px;
+  background-color: cornflowerblue;
+  border-color: cornflowerblue;
+  border-radius: 5px;
+  font-family: "-apple-system";
+  color: #f2f2f2;
+}
+.btn-secondary{
+  margin-left: 10px;
+  border-radius: 5px;
+  font-family: "-apple-system";
+  color: #f2f2f2;
+}
 </style>

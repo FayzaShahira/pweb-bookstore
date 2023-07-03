@@ -1,5 +1,5 @@
 <template>
-<h1>halo</h1>
+<h1>halaman peminjaman</h1>
 </template>
 
 <script>

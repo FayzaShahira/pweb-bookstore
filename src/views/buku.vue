@@ -3,9 +3,9 @@ import axios from "axios";
 import {ref} from "vue";
 import App from "@/App.vue";
 
-const readBuku='http://localhost/buku/readbuku.php';
-const insertBuku = 'http://localhost/buku/insertbuku.php';
-const deleteBuku = 'http://localhost/buku/deletebykodebuku.php';
+const readBuku='https://syakiraspace.my.id/fayzashahira/readbuku.php';
+const insertBuku = 'https://syakiraspace.my.id/fayzashahira/insertbuku.php';
+const deleteBuku = 'https://syakiraspace.my.id/fayzashahira/deletebykodebuku.php';
 
 export default {
   components: {App},
@@ -89,6 +89,11 @@ export default {
 </script>
 
 <template>
+  <h3>Silahkan Scroll Kebawah untuk Melihat Koleksi Buku</h3><br>
+  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+    <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+  </svg>
   <tr v-for="(data) in databuku">
   <div class="card text-center">
     <div class="card-header">
@@ -114,18 +119,11 @@ export default {
         <div class="card-footer text-muted">
           {{data.tanggal_input}}
         </div>
-
-
-
       </div>
-
-
     </div>
   </div>
   </tr>
-
-
-
+  <h6>Isi Data Dibawah Jika Ingin Menambahkan Koleksi Buku</h6>
   <div class="modal-body">
     <input
         class="form-control"
@@ -189,18 +187,41 @@ export default {
 
 
 <style scoped>
+h3{
+  margin-top: 20px;
+  margin-left: 490px;
+  font-family: "sans-serif";
+  font-size: 20px;
+  font-weight: bold;
+  color: cornflowerblue;
+  display: flex;
+  justify-content: space-between;
+}
+svg{
+  margin-left: 700px;
+  color: midnightblue;
+  margin-bottom: 20px;
+}
 body{
   background-color: floralwhite;
 }
 img {
-  height: 200px;
+  height: 230px;
   width: 40%;
+}
+.card-header{
+  background-color: cornflowerblue;
+  color: #f2f2f2;
+}
+.card-footer{
+  background-color: cornflowerblue;
+  color: #f2f2f2;
 }
 .modal-body{
   margin-left: 200px;
   margin-right: 200px;
   font-weight: bolder;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 hr{
   font-weight: bolder;
@@ -223,6 +244,17 @@ hr{
 .text-center{
   margin-left: 500px;
   font-family: -apple-system;
+  margin-bottom: 10px;
+}
+h6{
+  margin-top: 40px;
+  margin-left: 490px;
+  font-family: "sans-serif";
+  font-size: 20px;
+  font-weight: bold;
+  color: midnightblue;
+  display: flex;
+  justify-content: space-between;
 }
 .btn-primary{
   margin-left: 630px;

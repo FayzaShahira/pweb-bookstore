@@ -4,8 +4,8 @@ import axios from "axios";
 import {ref} from 'vue';
 // import App from "@/App.vue";
 
-const updateBuku = 'http://localhost/buku/updatebykodebuku.php';
-const selectKodeBuku = 'http://localhost/buku/selectbykodebuku.php';
+const updateBuku = 'https://syakiraspace.my.id/fayzashahira/updatebykodebuku.php';
+const selectKodeBuku = 'https://syakiraspace.my.id/fayzashahira/selectbykodebuku.php';
 
 export default {
   data() {
@@ -131,17 +131,39 @@ export default {
     </div>
   </div>
 
-  <button
+  <td><button
       type="button"
       class="btn btn-primary"
       v-on:click="updateBuku()">
     Update Buku
   </button>
   <router-link to="/buku" class="btn btn-secondary me-5"
-               >back</router-link>
+               ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+    <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+  </svg>back</router-link>
+  </td>
 </template>
 
 
 <style scoped>
-
+.modal-body{
+  margin-left: 250px;
+  margin-right: 250px;
+  font-weight: bolder;
+  margin-top: 40px;
+}
+.btn-primary{
+  margin-left: 630px;
+  background-color: cornflowerblue;
+  border-color: cornflowerblue;
+  border-radius: 5px;
+  font-family: "-apple-system";
+  color: #f2f2f2;
+}
+.btn-secondary{
+  margin-left: 10px;
+  border-radius: 5px;
+  font-family: "-apple-system";
+  color: #f2f2f2;
+}
 </style>

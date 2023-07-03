@@ -2,9 +2,9 @@
 import axios from "axios";
 import {ref} from "vue";
 
-const readKategori = 'http://localhost/buku/readkategori.php';
-const insertKategori = 'http://localhost/buku/insertkategori.php';
-const deleteKategori = 'http://localhost/buku/deletebykodekategori.php';
+const readKategori = 'https://syakiraspace.my.id/fayzashahira/readkategori.php';
+const insertKategori = 'https://syakiraspace.my.id/fayzashahira/insertkategori.php';
+const deleteKategori = 'https://syakiraspace.my.id/fayzashahira/deletebykodekategori.php';
 
 export default {
   // components: {App},
@@ -84,7 +84,7 @@ export default {
     <hr>
   </li>
   </tbody>
-
+  <h6>Isi Data Dibawah Jika Ingin Menambahkan Kategori Buku</h6>
   <div class="modal-body">
     <input
         class="form-control"
@@ -113,9 +113,12 @@ export default {
   margin-left: 260px;
   margin-right: 260px;
 }
-li {
-  margin-left: 100px;
+li{
   list-style: none;
+  margin-left: 100px;
+  font-family: "sans-serif";
+  font-size: 18px;
+  color: midnightblue;
 }
 .btn-outline-danger{
   width: 70px;height: 30px;
@@ -128,6 +131,16 @@ li {
   width: 70px;height: 30px;
   font-size: small;
   font-weight: bold;
+}
+h6{
+  margin-top: 40px;
+  margin-left: 490px;
+  font-family: "sans-serif";
+  font-size: 20px;
+  font-weight: bold;
+  color: midnightblue;
+  display: flex;
+  justify-content: space-between;
 }
 .btn-primary{
   margin-left: 630px;

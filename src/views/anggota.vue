@@ -3,9 +3,9 @@ import axios from "axios";
 import {ref} from "vue";
 // import App from "@/App.vue";
 
-const readAnggota = 'http://localhost/buku/readanggota.php';
-const insertAnggota = 'http://localhost/buku/insertanggota.php';
-const deleteAnggota = 'http://localhost/buku/deleteanggota.php';
+const readAnggota = 'https://syakiraspace.my.id/fayzashahira/readanggota.php';
+const insertAnggota = 'https://syakiraspace.my.id/fayzashahira/insertanggota.php';
+const deleteAnggota = 'https://syakiraspace.my.id/fayzashahira/deleteanggota.php';
 
 export default {
   // components: {App},
@@ -94,6 +94,7 @@ export default {
       <hr>
     </td>
   </li>
+  <h6>Isi Data Dibawah Jika Ingin Menambahkan Anggota</h6>
 
   <div class="modal-body">
     <input
@@ -141,6 +142,9 @@ export default {
 <style scoped>
 li{
   margin-left: 100px;
+  font-family: "sans-serif";
+  font-size: 18px;
+  color: midnightblue;
 }
 .modal-body{
   margin-left: 200px;
@@ -158,6 +162,16 @@ li{
   width: 70px;height: 30px;
   font-size: small;
   font-weight: bold;
+}
+h6{
+  margin-top: 40px;
+  margin-left: 490px;
+  font-family: "sans-serif";
+  font-size: 20px;
+  font-weight: bold;
+  color: midnightblue;
+  display: flex;
+  justify-content: space-between;
 }
 .btn-primary{
   margin-left: 630px;
