@@ -18,7 +18,7 @@ export default {
       updateTahunTerbit: '',
       updateHarga: '',
       updateKodeKategori: '',
-      file: '',
+      // file: '',
     };
   },
   mounted() {
@@ -39,14 +39,14 @@ export default {
             this.updateTahunTerbit = this.selectBuku.tahun;
             this.updateHarga = this.selectBuku.harga;
             this.updateKodeKategori = this.selectBuku.kode_kategori
-            this.file = this.selectBuku.file_cover;
+            // this.file = this.selectBuku.file_cover;
           })
           .catch((err) => {
             console.log(err);
           });
     },
     updateBuku() {
-      this.file = this.$refs.file.files[0];
+      // this.file = this.$refs.file.files[0];
       let formData = new FormData
 
       formData.append('judul_buku', this.updateJudulBuku);
@@ -56,7 +56,7 @@ export default {
       formData.append('tahun', this.updateTahunTerbit);
       formData.append('harga', this.updateHarga);
       formData.append('kode_kategori', this.updateKodeKategori);
-      formData.append('file_cover', this.file);
+      // formData.append('file_cover', this.file);
 
       axios
           .post(updateBuku, formData, {
