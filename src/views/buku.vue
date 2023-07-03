@@ -3,9 +3,9 @@ import axios from "axios";
 import {ref} from "vue";
 import App from "@/App.vue";
 
-const readBuku='https://syakiraspace.my.id/fayzashahira/readbuku.php';
-const insertBuku = 'https://syakiraspace.my.id/fayzashahira/insertbuku.php';
-const deleteBuku = 'https://syakiraspace.my.id/fayzashahira/deletebykodebuku.php';
+const readBuku='https://faayshabookstore.000webhostapp.com/moonlitbook/readbuku.php';
+const insertBuku = 'https://faayshabookstore.000webhostapp.com/moonlitbook/insertbuku.php';
+const deleteBuku = 'https://faayshabookstore.000webhostapp.com/moonlitbook/deletebykodebuku.php';
 
 export default {
   components: {App},

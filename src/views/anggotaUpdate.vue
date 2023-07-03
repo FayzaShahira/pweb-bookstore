@@ -3,8 +3,8 @@ import {RouterLink} from "vue-router";
 import axios from "axios";
 import {ref} from 'vue';
 
-const updateAnggota = 'https://syakiraspace.my.id/fayzashahira/updateanggota.php';
-const selectAnggota = 'https://syakiraspace.my.id/fayzashahira/selectbynomoranggota.php';
+const updateAnggota = 'https://faayshabookstore.000webhostapp.com/moonlitbook/updateanggota.php';
+const selectAnggota = 'https://faayshabookstore.000webhostapp.com/moonlitbook/selectbynomoranggota.php';
 
 export default {
   data() {

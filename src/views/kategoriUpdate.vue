@@ -3,8 +3,8 @@ import {RouterLink} from "vue-router";
 import axios from "axios";
 import {ref} from 'vue';
 
-const updateKategori = 'https://syakiraspace.my.id/fayzashahira/updatebykodekategori.php';
-const selectKategori = 'https://syakiraspace.my.id/fayzashahira/selectbykodekategori.php';
+const updateKategori = 'https://faayshabookstore.000webhostapp.com/moonlitbook/updatebykodekategori.php';
+const selectKategori = 'https://faayshabookstore.000webhostapp.com/moonlitbook/selectbykodekategori.php';
 
 export default {
   data() {

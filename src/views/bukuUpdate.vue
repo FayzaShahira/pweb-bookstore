@@ -4,8 +4,8 @@ import axios from "axios";
 import {ref} from 'vue';
 // import App from "@/App.vue";
 
-const updateBuku = 'https://syakiraspace.my.id/fayzashahira/updatebykodebuku.php';
-const selectKodeBuku = 'https://syakiraspace.my.id/fayzashahira/selectbykodebuku.php';
+const updateBuku = 'https://faayshabookstore.000webhostapp.com/moonlitbook/updatebykodebuku.php';
+const selectKodeBuku = 'https://faayshabookstore.000webhostapp.com/moonlitbook/selectbykodebuku.php';
 
 export default {
   data() {

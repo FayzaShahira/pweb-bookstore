@@ -2,9 +2,9 @@
 import axios from "axios";
 import {ref} from "vue";
 
-const readKategori = 'https://syakiraspace.my.id/fayzashahira/readkategori.php';
-const insertKategori = 'https://syakiraspace.my.id/fayzashahira/insertkategori.php';
-const deleteKategori = 'https://syakiraspace.my.id/fayzashahira/deletebykodekategori.php';
+const readKategori = 'https://faayshabookstore.000webhostapp.com/moonlitbook/readkategori.php';
+const insertKategori = 'https://faayshabookstore.000webhostapp.com/moonlitbook/insertkategori.php';
+const deleteKategori = 'https://faayshabookstore.000webhostapp.com/moonlitbook/deletebykodekategori.php';
 
 export default {
   // components: {App},
